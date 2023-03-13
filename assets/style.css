@@ -147,7 +147,8 @@
     position: absolute;
     top: -10px;
     left: 10%;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
+    background-color: red;
     width: 60px;
     height: 20px;
 }
@@ -155,7 +156,8 @@
     position: absolute;
     bottom: -10px;
     right: 20%;
-    background: #f5f5f5;
+    /*background: #f5f5f5;*/
+    background-color: red;
     width: 60px;
     height: 20px;
 }
@@ -183,5 +185,59 @@
     }
     100% {
         right: 20%;
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: spostamento_due_sopra 6s infinite linear;
+}
+
+@keyframes spostamento_due_sopra {
+    20% {
+        left: 85%;
+        top: -10px;
+    }
+    40% {
+        left: 85%;
+        top: 85%;
+    }
+    60% {
+        left: -15%;
+        top: 85%;
+    }
+    80% {
+        left: -15%;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: spostamento_due_sotto 6s infinite linear;
+}
+
+@keyframes spostamento_due_sotto {
+    20% {
+        right: 80%;
+        bottom: -10px;
+    }
+    40% {
+        right: 85%;
+        bottom: 85%;
+    }
+    60% {
+        right: -15%;
+        bottom: 85%;
+    }
+    80% {
+        right: -15%;
+        bottom: -10px;
+    }
+    100% {
+        right: 20%;
+        bottom: -10px;
     }
 }
