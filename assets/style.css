@@ -159,3 +159,29 @@
     width: 60px;
     height: 20px;
 }
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: spostamento_uno_sopra 2s infinite linear;
+}
+
+@keyframes spostamento_uno_sopra {
+    50% {
+        left: 60%;
+    }
+    100% {
+        left: 10%
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: spostamento_uno_sotto 2s infinite linear;
+}
+
+@keyframes spostamento_uno_sotto {
+    50% {
+        right: 60%;
+    }
+    100% {
+        right: 20%;
+    }
+}
